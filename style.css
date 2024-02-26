@@ -102,17 +102,38 @@ th, td {
 th {
     background-color: #f2f2f2;
 }
-@media screen and (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
+@media only screen and (max-width: 600px) {
+    header {
+        height: auto;
+    }
+    
+    .profile-info {
+        width: 100%;
     }
 
-    .left-section,
-    .right-section {
-        width: 100%;
+    .profile-picture {
+        width: 100px; /* Adjust the size according to your preference */
+        height: 100px; /* Adjust the size according to your preference */
+    }
+
+    h3 {
+        padding: 10px 30px; /* Adjust padding for length */
+        border-radius: 15px; /* Adjust border-radius for roundness */
+        margin-bottom: 5px; /* Add margin to separate from content below */
     }
 
     .buttons {
         margin-top: 10px;
+    }
+
+    .contact-button,
+    .download-cv-button {
+        padding: 8px 16px;
+        margin-right: 8px;
+    }
+}
+
+    .buttons {
+        margin-top: 8px;
     }
 }
