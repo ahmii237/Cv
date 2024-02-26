@@ -122,18 +122,24 @@ th {
         margin-bottom: 5px; /* Add margin to separate from content below */
     }
 
+    .main-content {
+        flex-direction: column; /* Change to column layout for mobile */
+        align-items: center; /* Center the content */
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%; /* Make sections take full width on mobile */
+        margin-bottom: 20px; /* Add margin between sections */
+    }
+
     .buttons {
-        margin-top: 10px;
+        margin-top: 1px;
     }
 
     .contact-button,
     .download-cv-button {
         padding: 8px 16px;
         margin-right: 8px;
-    }
-}
-
-    .buttons {
-        margin-top: 8px;
     }
 }
